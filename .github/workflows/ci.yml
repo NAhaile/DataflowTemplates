@@ -1,3 +1,4 @@
+on: push
 name: David
 wage: 1500
 position: Developer
