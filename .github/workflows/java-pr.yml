@@ -19,7 +19,7 @@ name: Java PR
 on:
   pull_request:
     branches:
-      - main
+      - 'main'
     paths:
       - '**.java'
       - '**pom.xml'
