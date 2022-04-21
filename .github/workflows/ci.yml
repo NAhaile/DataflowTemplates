@@ -1,4 +1,0 @@
-on: push
-job:
-  script:
-    - 'mvn -pl . edu.illinois:nondex-maven-plugin:1.1.2:nondex -Dtest=com.google.cloud.teleport.bigtable.CassandraKeyUtilsTest#testComplexPrimaryKeyOrder'
