@@ -19,4 +19,6 @@ jobs:
         java-version: 14
 
     - name: Build project with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn -pl . edu.illinois:nondex-maven-plugin:1.1.2:nondex -Dtest=com.google.cloud.teleport.bigtable.CassandraKeyUtilsTest#testComplexPrimaryKeyOrder
+      
+ 
