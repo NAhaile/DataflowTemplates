@@ -75,7 +75,7 @@ jobs:
       # - name: Run Unit Tests
       #   run: ./cicd/run-unit-tests --changed-files="${{ steps.setup-env.outputs.changed-files }}"
       - name: Force Java8 Install
-        run: install java-1.8.0-openjdk
+        run: apt-get install java-1.8.0-openjdk
       - name: Check Version of Java
         run: java -version
       - name: Run known flaky test
