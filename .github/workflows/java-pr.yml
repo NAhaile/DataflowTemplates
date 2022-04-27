@@ -67,8 +67,8 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@230611dbd0eb52da1e1f4f7bc8bb0c3a339fc8b7
         env:
-          java-version: '8.0.6.15' # Spotless won't work on version 8
-          JBP_CONFIG_OPEN_JDK_JRE: '{jre: {version: 8.0.6.15 } }'
+          java-version: '1.8' # Spotless won't work on version 8
+          JBP_CONFIG_OPEN_JDK_JRE: '{jre: {version: 1.8 } }'
       # - name: Setup Environment
       #   id: setup-env
       #   uses: ./.github/actions/setup-env
