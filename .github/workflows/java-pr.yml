@@ -74,6 +74,12 @@ jobs:
       #   uses: ./.github/actions/setup-env
       # - name: Run Unit Tests
       #   run: ./cicd/run-unit-tests --changed-files="${{ steps.setup-env.outputs.changed-files }}"
+      - name: Force Java8
+        run: sudo apt update
+      - name: Force Java8 Install
+        run: sudo apt install openjdk-8-jdk openjdk-8-jre
+      - name: Check Version of Java
+        run: java -version
       - name: Run known flaky test
         run: mvn -pl . -Dtest=com.google.cloud.teleport.bigtable.CassandraKeyUtilsTest#testComplexPrimaryKeyOrder test
       - name: Run known flaky test with Nondex
